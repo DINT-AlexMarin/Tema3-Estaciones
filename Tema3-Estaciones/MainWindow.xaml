@@ -1,0 +1,38 @@
+﻿<Window x:Class="Tema3_Estaciones.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema3_Estaciones"
+        mc:Ignorable="d"
+        Title="Estaciones" Height="450" Width="800" Icon="assets/spring_roll.png" MinHeight="400" MinWidth="400">
+    <DockPanel LastChildFill="True" Background="Aquamarine">
+        <TextBlock DockPanel.Dock="Top"  Text="Las 4 Estaciones" FontStyle="Italic" FontFamily="rubik" TextAlignment="Center" FontSize="30">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF454DFF" Offset="0"/>
+                    <GradientStop Color="#FFC8E800" Offset="1"/>
+                </LinearGradientBrush>
+                
+            </TextBlock.Foreground>
+        </TextBlock>
+        <UniformGrid Rows="2" Columns="2" >
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="10">
+                <Image Source="assets/primavera.jpg" Stretch="None"></Image>
+            </ScrollViewer>
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="10">
+                <Image Source="assets/verano.jpg" Stretch="None"></Image>
+            </ScrollViewer>
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="10">
+                <Image Source="assets/otoño.jpg" Stretch="None"></Image>
+            </ScrollViewer>
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="10">
+                <Image Source="assets/invierno.jpg" Stretch="None"></Image>
+            </ScrollViewer>
+        </UniformGrid>
+    </DockPanel>
+
+</Window>
